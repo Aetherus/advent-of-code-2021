@@ -1,6 +1,6 @@
 #!/usr/bin/env elixir
 
-defmodule D2 do
+defmodule P2 do
   def o2([elem], _pos), do: to_i(elem)
 
   def o2(list, pos) do
@@ -40,4 +40,4 @@ input =
   |> Stream.map(&String.split(&1, "", trim: true))
   |> Enum.map(&List.to_tuple/1)
 
-IO.inspect(D2.o2(input, 0) * D2.co2(input, 0))
+IO.inspect(P2.o2(input, 0) * P2.co2(input, 0))
